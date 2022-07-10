@@ -1,0 +1,10 @@
+amount = int(input())
+notes_of_100=(amount)/100
+notes_of_100=int(notes_of_100)
+notes_of_50=int((amount-100*notes_of_100)/50)
+notes_of_10=int((amount-100*notes_of_100-50*notes_of_50)/10)
+notes_of_1=int(amount-100*notes_of_100-50*notes_of_50-10*notes_of_10)
+print("100:"+str(notes_of_100))
+print("50:"+str(notes_of_50))
+print("10:"+str(notes_of_10))
+print("1:"+str(notes_of_1))

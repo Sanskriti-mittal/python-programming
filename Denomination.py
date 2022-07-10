@@ -1,0 +1,15 @@
+N=int(input())
+no_of_1000=N//1000
+print("1000:{}".format(no_of_1000))
+no_of_500=N%1000//500
+print("500:{}".format(no_of_500))
+no_of_100=N%1000%500//100
+print("100:{}".format(no_of_100))
+no_of_50=N%1000%500%100//50
+print("50:{}".format(no_of_50))
+no_of_20=N%1000%500%100%50//20
+print("20:{}".format(no_of_20))
+no_of_5=N%1000%500%100%50%20//5
+print("5:{}".format(no_of_5))
+no_of_1=N%1000%500%100%50%20%5
+print("1:{}".format(no_of_1))
