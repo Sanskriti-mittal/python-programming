@@ -1,0 +1,18 @@
+def calculate_bill(amount):
+    # Complete this function
+    if amount<500:
+        discount="5%"
+        bill=amount*(100-int(discount[0]))/100
+        
+    elif amount<2500:
+        discount="10%"
+        bill=amount*((100-int(discount[0:2]))/100)
+    else:
+        discount="20%"
+        bill=amount*((100-int(discount[0:2]))/100)
+    bill=round(bill,3)
+    return(bill)
+amount = int(input())
+# Call the calculate_bill function
+result=calculate_bill(amount)
+print(result)

@@ -1,0 +1,12 @@
+def validate_atm_pin_code(pin):
+    # Complete this function
+    is_digit=pin.isdigit()
+    if (len(pin)==4 or len(pin)==6) and is_digit:
+        result="Valid PIN Code"
+    else:
+        result="Invalid PIN Code"
+    return(result)
+pin = input()
+# Call the validate_atm_pin_code function
+result=validate_atm_pin_code(pin)
+print(result)
